@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        let tabela = document.querySelector("tbody");
+        let linha = document.createElement("tr");
+        let coluna1 = document.createElement("td");
+        coluna1.innerText = "refrigerante";
+        let coluna2 = document.createElement("td");
+        coluna2.innerText = "R$ 3,00";
+
+        tabela.appendChild(linha);
+        linha.appendChild(coluna1);
+        linha.appendChild(coluna2);
+    </script>
+</body>
+</html>
